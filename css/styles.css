@@ -113,6 +113,8 @@ section {
 }
 a:hover {
   font-style: italic;
+  background-color: #F5F8F6;
+  color: #a5a9b9;
 }
 .attn-grabber img {
   width: 40%;
