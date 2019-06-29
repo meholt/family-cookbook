@@ -2,6 +2,9 @@
   display: flex;
   justify-content: center;
 }
+.shadow {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
 * {
   box-sizing: border-box;
 }
@@ -44,6 +47,12 @@ p {
 section {
   border-bottom: 2px dotted #E9A8A9;
 }
+button {
+  background-color: #a5a9b9;
+  color: #F5F8F6;
+  border-radius: 5%;
+  padding: 15px;
+}
 .container {
   width: 98%;
   margin: 0 auto;
@@ -51,6 +60,7 @@ section {
   background-color: #a5a9b9;
 }
 .header {
+  font-family: 'Permanent Marker', cursive;
   text-align: center;
 }
 .nav {
@@ -124,6 +134,8 @@ a:hover {
 }
 .attn-grabber img {
   width: 40%;
+}
+@media (min-width: 800px) {
 }
 @media (min-width: 1280px) {
   body {
