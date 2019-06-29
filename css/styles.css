@@ -109,7 +109,13 @@ section {
 }
 .open .nav-links {
   display: block;
+  text-align: center;
   widows: 100%;
+}
+.open .nav-links:hover {
+  font-style: italic;
+  background-color: #F5F8F6;
+  color: #a5a9b9;
 }
 a:hover {
   font-style: italic;

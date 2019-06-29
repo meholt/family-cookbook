@@ -157,6 +157,7 @@ section {
         font-size: 3.2rem;
         padding: 1rem 0;
         color: @white;
+
     }
 
     &.open {
@@ -164,7 +165,14 @@ section {
 
         .nav-links {
             display: block;
+            text-align: center;
             widows: 100%;
+
+            &:hover {
+                font-style: italic;
+                background-color: @link-color;
+                color: @light-purple;
+            }
         }
     }
 
