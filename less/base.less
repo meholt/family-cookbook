@@ -1,0 +1,152 @@
+// Base Styles
+
+// Fonts
+@main-font: 'Barlow Condensed', Sans-serif;
+
+// Colors
+@dark-blue: #5b768f;
+@dark-purple: #918FA9;
+@light-purple: #a5a9b9;
+@coral: #E9A8A9;
+@white: #F5F8F6;
+@link-color: @white;
+
+// Media Queries
+@tablet: ~"(min-width: 800px)";
+@desktop: ~"(min-width: 1280px)";
+
+
+// Mix-Ins
+.center-content {
+    display: flex;
+    justify-content: center;
+}
+
+// General Styles
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: @main-font;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+body {
+    background-color: @white;
+    border: 1px solid @dark-purple;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+    color: @dark-purple;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+
+    // &:after {
+    //     content: '';
+    //     height: 1rem;
+    //     width: 4.0rem;
+    //     background-color: @coral;
+    //     margin: 2.4rem auto;
+    // }
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2.0rem;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: @dark-blue;
+}
+
+section {
+    border-bottom: 2px dotted @coral;
+
+}
+
+
+// Layout
+.container {
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: @light-purple;
+    // .shadow();
+}
+
+.header {
+    text-align: center;
+}
+
+.nav {
+    .center-content();
+    border-radius: 5px 5px 0px 0px;
+
+    .nav-links {
+        text-decoration: none;
+        color: @link-color;
+        font-size: 2.4rem;
+        padding: 2rem;
+
+    }
+
+    &:visited {
+        text-decoration: none;
+        color: @link-color;
+    }
+}
+
+    .open-nav {
+        font-size: 4rem;
+        padding: 1rem 0;
+        color: @white;
+    }
+
+    &.open {
+        display: block;
+
+        .nav-links {
+            display: block;
+            widows: 100%;
+        }
+
+        .open-nav {
+            display: none;
+        }
+    }
+
+
+a {
+    &:hover {
+        font-style: italic;
+        color: @coral;
+    }
+}
+
+.attn-grabber {
+    img {
+        width: 40%;
+
+    }
+}
