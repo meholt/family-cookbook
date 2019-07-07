@@ -3,25 +3,45 @@
 <html>
 
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Holt 'Ohana Recipes</title>
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Permanent+Marker|Sacramento&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/c7e1696c44.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+        <script defer src="js/main.js"></script>
     </head>
 
     <body>
         <!-- header -->
-        <div class="header">
-            <h1>Holt 'Ohana Recipes</h1>
-        </div>
-
+            <div class="header">
+                <h1>Holt 'Ohana Recipes</h1>
+            </div>
+            
+            
+            <div class="container" id="responsive-nav">
         <!-- Navigation -->
-        <div class="container">
-            <nav class="nav">
-                <a class="nav-links" href="index.html">Home</a>
-                <a class="nav-links" href="recipes.html">Recipes</a>
-                <a class="nav-links" href="#">Blog</a>
-                <a class="nav-links" href="about.html">About the 'Ohana</a>
-                <a class="nav-links" href="contact.html">Contact Us</a>
-            </nav>
-        </div>
+                <nav class="nav">
+                    <a class="nav-links" href="index.html">Home</a>
+                    
+                    <div class="dropdown">
+                        <button class="dropbtn">Recipes
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Soups</a>
+                            <a href="#">Beef</a>
+                            <a href="#">Pork</a>
+                            <a href="#">Chicken</a>
+                            <a href="#">Desserts</a>
+                        </div>
+                    </div>
+                    
+                    <a class="nav-links" href="#">Blog</a>
+                    <a class="nav-links" href="about.html">About the 'Ohana</a>
+                    <a class="nav-links active" href="contact.html">Contact Us</a>
+                    <i class="fas fa-bars open-nav"></i>
+                </nav>
+            </div>
 
         <!-- CTA -->
         <section class="cta">
@@ -30,36 +50,4 @@
 
     </body>
 
-=======
-<!DOCTYPE html>
-
-<html>
-
-    <head>
-        <title>Holt 'Ohana Recipes</title>
-    </head>
-
-    <body>
-        <!-- header -->
-        <div class="header">
-            <h1>Holt 'Ohana Recipes</h1>
-        </div>
-
-        <!-- Navigation -->
-        <div class="container">
-            <nav class="nav">
-                <a class="nav-links" href="index.html">Home</a>
-                <a class="nav-links" href="recipes.html">Recipes</a>
-                <a class="nav-links" href="#">Blog</a>
-                <a class="nav-links" href="about.html">About the 'Ohana</a>
-                <a class="nav-links" href="contact.html">Contact Us</a>
-            </nav>
-        </div>
-
-        <!-- CTA -->
-        <section class="cta">
-
-        </section>
-
-    </body>
 </html>

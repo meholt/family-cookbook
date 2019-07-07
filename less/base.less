@@ -2,6 +2,7 @@
 
 // Fonts
 @main-font: 'Barlow Condensed', Sans-serif;
+@title-font: 'Permanent Marker', cursive;
 
 // Colors
 @dark-blue: #5b768f;
@@ -10,6 +11,9 @@
 @coral: #E9A8A9;
 @white: #F5F8F6;
 @link-color: @white;
+@primary-color: @dark-purple;
+@main-textColor: @dark-blue;
+
 
 // Media Queries
 @tablet: ~"(min-width: 800px)";
@@ -20,6 +24,16 @@
 .center-content {
     display: flex;
     justify-content: center;
+}
+
+.shadow {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+
+.link-hover {
+    font-style: italic;
+    background-color: @link-color;
+    color: @light-purple;
 }
 
 // General Styles
@@ -39,7 +53,7 @@ img {
 
 body {
     background-color: @white;
-    border: 1px solid @dark-purple;
+    // border: 1px solid @primary-color;
 }
 
 h1,
@@ -47,7 +61,7 @@ h2,
 h3,
 h4 {
     font-weight: bold;
-    color: @dark-purple;
+    color: @primary-color;
 }
 
 h1 {
@@ -77,7 +91,7 @@ h4 {
 p {
     font-size: 1.8rem;
     line-height: 1.5;
-    color: @dark-blue;
+    color: @main-textColor;
 }
 
 section {
@@ -85,6 +99,21 @@ section {
 
 }
 
+// Buttons
+
+button {
+    background-color: @light-purple;
+    color: @white;
+    text-decoration: none;
+    border-radius: 15x;
+    border: 1px solid @white;
+    padding: 15px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(@light-purple, 10%);
+    }
+}
 
 // Layout
 .container {
@@ -96,6 +125,7 @@ section {
 }
 
 .header {
+    font-family: @title-font;
     text-align: center;
 }
 
@@ -109,7 +139,7 @@ section {
     }
 
     .dropdown {
-        float: left;
+        // float: left;
         overflow: hidden;
         display: none;
 
@@ -134,6 +164,10 @@ section {
                 text-decoration: none;
                 display: block;
                 text-align: center;
+
+                &:hover {
+                    .link-hover();
+                }
             }
         }
     }
@@ -157,6 +191,9 @@ section {
         font-size: 3.2rem;
         padding: 1rem 0;
         color: @white;
+        text-align: center;
+        .center-content();
+
     }
 
     &.open {
@@ -164,22 +201,33 @@ section {
 
         .nav-links {
             display: block;
+            text-align: center;
             widows: 100%;
+
+            &:hover {
+                .link-hover();
+            }
         }
     }
 
 
 a {
     &:hover {
-        font-style: italic;
-        background-color: @link-color;
-        color: @light-purple;
+        .link-hover();
     }
 }
 
-.attn-grabber {
-    img {
-        width: 40%;
+.cta {
+    text-align: center;
 
+    .attn-grabber {
+        img {
+            border-radius: 60%;
+            display: block;
+            padding-top: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            width:45%;
+        }
     }
 }

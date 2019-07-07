@@ -1,9 +1,58 @@
 // Desktop View Styles
 
 body {
-    width: 80%;
+    width: 90%;
+    margin: 10px 75px;
 }
 
 .container {
-    width: 80%;
+    width: 100%;
+
+}
+
+.open-nav {
+    display: none;
+}
+
+.nav {
+    .nav-links {
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+        color: @link-color;
+        font-size: 2.4rem;
+        padding: 1rem;
+
+        &:hover {
+            .link-hover();
+        }
+        
+    }
+
+}
+
+.cta {
+    text-align: left;
+    
+    .attn-grabber {
+        img {
+            float: left;
+            border-radius: 5px;
+            width: 300px;
+            margin: 5px 25px 6px 0;
+        }
+
+        div {
+            padding-top: 5px;
+            padding-left: 0px;
+        }
+
+    }
+
+    div {
+        img {
+            float: right;
+            margin-left: 25px
+        }
+    }
 }
